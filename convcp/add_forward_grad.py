@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Time-stamp: <2018-05-18 16:21:38 tshino>
+# Time-stamp: <2019-11-19 13:49:12 tshino>
 #
 """
 Add feedforward gradient method to chainer.Variable
@@ -101,6 +101,7 @@ def forward_grad(self, rho=1e-3, decay=0.50, loss_scale=None):
             initial_device.use()
 
 # Add the method to 'Variable' object
-Variable.forward_grad = MethodType(forward_grad, None, Variable)
+#Variable.forward_grad = MethodType(forward_grad, None, Variable)
+Variable.forward_grad = forward_grad
 
 #EOF
