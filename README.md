@@ -1,5 +1,22 @@
 # convcp
 
+This is the sample code for hierarchical competitive learning
+which enables robust and effective unsupervised representation learning
+in conventional CNNs.
+
+It has been presented in
+[1st Workshop on Shared Visual Representations
+in Human and Machine Intelligence (SVRHM)](https://www.svrhm2019.com/),
+NeurIPS 2019.
+You can find the detailed explanation of the methods
+[here](https://drive.google.com/file/d/19vaDbDAjvHYAFSvZeDeKjEvrnolh_gDp/view?usp=sharing).
+
+The code is implemented as an additional module
+of [Chainer](https://chainer.org/) with GPU power,
+and involves samples of image discrimination tasks
+with MNIST, CIFAR-10, and ImageNet.
+
+
 ## test environment
 - CentOS 7.6
 - Python 2.7
@@ -53,6 +70,11 @@
 
 
 ## ImageNet
+For the samples of ImageNet,
+you have to deploy the image data under 'convcp/ImageNet' directory.
+Please check 'all_train.lst' and 'all_val.lst'
+for the actual required directory structure for the dataset.
+
 ### competitive learning
     python train_alex_cp.py -g 0 -E 300 -C 10 -s 100 -B 8 -M alex_cp -O alex_cp
 	
