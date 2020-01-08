@@ -9,7 +9,7 @@ It has been presented in
 in Human and Machine Intelligence (SVRHM)](https://www.svrhm2019.com/),
 NeurIPS 2019.
 You can find the detailed explanation of the methods
-[here](https://drive.google.com/file/d/19vaDbDAjvHYAFSvZeDeKjEvrnolh_gDp/view?usp=sharing).
+in [our arXiv pre-print](https://arxiv.org/abs/2001.01121).
 
 The code is implemented as an additional module
 of [Chainer](https://chainer.org/) with GPU power,
